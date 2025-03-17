@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+<link rel="icon" type="favicon.ico" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YASSER ACADEMY</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: linear-gradient(to bottom, #ffffff, #00ccff) fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            background-attachment: fixed; /* جعل الخلفية ثابتة */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .login-container {
+            background: rgb(0, 204, 255);
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 47, 255, 0.5);
+            text-align: center;
+            width: 300px;
+            max-width: 350px;
+            margin: 20vh auto;
+            margin-right: 580px;
+            margin-top: 100px;
+            height: 500px;
+
+        }
+
+        .tel {
+            margin-top: 300px;
+        }
+
+        .input-box input {
+            width: 90%;
+            padding: 10px;
+            background: white;
+            border: none;
+            border-radius: 50px;
+            color: black;
+            text-align: center;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            background: rgb(0, 81, 255);
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .login-btn:hover {
+            background: rgb(0, 95, 139);
+        }
+
+        .playlists-container {
+            display: none;
+            margin-top: 50px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .playlist-box {
+            background: rgb(100, 149, 237);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            text-align: center;
+            width: 300px;
+        }
+
+        .playlist-box img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .playlist-btn {
+            width: 100%;
+            padding: 10px;
+            background: rgb(0, 81, 255);
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .playlist-btn:hover {
+            background: rgb(0, 95, 139);
+        }
+
+        /* تنسيق الصورة الجديدة */
+        .student-image {
+            width: 450px; /* تصغير الصورة */
+            height: auto; /* الحفاظ على نسبة الطول */
+            margin: 20px 0; /* إضافة هامش */
+        }
+      .asd{font-color:black;
+color:black;}
+
+
+    </style>
+</head>
+<body>
+    <img src="YASser academy (2).png" style="max-width: 100%; height: auto; margin-top: 20px;">
+    
+    <div class="login-container" id="loginForm">
+        <h2>SIGN IN</h2>
+        <div class="input-box">
+            <input type="password" placeholder="Enter Password" id="password">
+        </div>
+        <button class="login-btn" onclick="checkPassword()">Login</button>
+        <h4 class="tel">tel:01154403762</h4>
+    </div>
+
+    <div class="playlists-container" id="videosPage" style="display: none;">
+       <img src="—Pngtree—a male student is studying_7649439.png" alt="Student Studying" class="student-image">
+ <h3 class="asd" align="right">
+
+      "ياسر أكاديمي" هو منصة تعليمية إلكترونية متخصصة في تقديم محتوى تعليمي عالي الجودة في مادة الرياضيات،
+       موجهة لطلاب المراحل الدراسية المختلفة،
+       بدءًا من المرحلة الابتدائية وحتى المرحلة الثانويه.
+       يهدف الموقع إلى تبسيط مفاهيم الرياضيات وجعلها أكثر وضوحًا وسهولة للطلاب،
+       مع توفير أدوات تعليمية تفاعلية لتحسين تجربة التعلم.
+
+
+    أهداف الموقع:
+   تبسيط الرياضيات: تقديم شرح مبسط ومفصل للمفاهيم الرياضية المعقدة.
+
+   تعزيز الفهم: مساعدة الطلاب على فهم الأساسيات والتطبيقات العملية للرياضيات.
+
+    تحسين الأداء: تقديم تمارين واختبارات تفاعلية لتحسين مستوى الطلاب.
+   دعم جميع المراحل: تغطية المناهج الدراسية من المرحلة الابتدائية إلى الجامعية.
+
+    التعلم التفاعلي: استخدام أدوات تعليمية تفاعلية مثل الفيديوهات والتمارين التفاعلية.
+
+</h3>
+
+ <h3 class="asd">Playlists</h2>
+
+        <!-- الصورة الجديدة في صفحة قوائم التشغيل -->
+        
+        
+        <div class="playlist-box">
+            <img src="playlist1.jpg" alt="Playlist 1">
+            <button class="playlist-btn" onclick="openPlaylist('playlist1.html')">Playlist 1</button>
+        </div>
+        
+        <div class="playlist-box">
+            <img src="playlist2.jpg" alt="Playlist 2">
+            <button class="playlist-btn" onclick="openPlaylist('playlist2.html')">Playlist 2</button>
+        </div>
+        
+        <div class="playlist-box">
+            <img src="playlist3.jpg" alt="Playlist 3">
+            <button class="playlist-btn" onclick="openPlaylist('playlist3.html')">Playlist 3</button>
+        </div>
+        
+        <div class="playlist-box">
+            <img src="playlist4.jpg" alt="Playlist 4">
+            <button class="playlist-btn" onclick="openPlaylist('playlist4.html')">Playlist 4</button>
+        </div>
+        
+        <div class="playlist-box">
+            <img src="playlist5.jpg" alt="Playlist 5">
+            <button class="playlist-btn" onclick="openPlaylist('playlist5.html')">Playlist 5</button>
+        </div>
+    </div>
+
+    <script>
+        function checkPassword() {
+            const password = document.getElementById('password').value;
+            if (password === '123456') {
+                document.getElementById('loginForm').style.display = 'none';
+                document.getElementById('videosPage').style.display = 'flex';
+            } else {
+                alert('Incorrect password! Please try again.');
+            }
+        }
+
+        function openPlaylist(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>
